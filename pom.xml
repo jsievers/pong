@@ -14,6 +14,22 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <mainClass>svanimpe.pong.ui.Pong</mainClass>
     </properties>
+    
+    <build>
+     <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jar-plugin</artifactId>
+            <version>2.4</version>
+            <configuration>
+                <archive>
+                  <manifest>
+                    <mainClass>svanimpe.pong.ui.Pong</mainClass>
+                  </manifest>
+                </archive>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>	
 </project>
